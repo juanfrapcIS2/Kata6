@@ -14,7 +14,7 @@ public class HistogramDisplay<T> extends ApplicationFrame {
     private final String nameEjeX;
 
     public HistogramDisplay(Histogram<T> histogram, String nameEjeX) {
-        super("HISTOGRAMA " + nameEjeX);
+        super("HISTOGRAMA " + nameEjeX.toUpperCase());
         this.histogram = histogram;
         this.nameEjeX = nameEjeX;
         setContentPane(createPanel());
